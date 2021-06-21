@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="style.css" type="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <title>Coppa Club | Tower Bridge</title>
   </head>
   <body>
@@ -35,202 +35,204 @@
 
     </header>
 
-    <!-- about -->
+    <main>
+      <!-- about -->
 
-    <about>
+      <section id="about">
 
-      <article>
+        <article>
 
-        <h2>ABOUT</h2>
-        
-        <p>Coppa Club is a place for eating, drinking, meeting and unwinding.</p>
+          <h2>ABOUT</h2>
+          
+          <p>Coppa Club is a place for eating, drinking, meeting and unwinding.</p>
 
-        <p>Built around a central, brass bar that’s open on all-sides, Coppa Club has a raised lounge for working and winding down, a 250-cover restaurant with a marble herringbone floor, and a café with booths and a fireplace. Outside, there’s a large, south-facing terrace that catches the sun all day. All our seating is designed to make the most of our view over the river.</p>
+          <p>Built around a central, brass bar that’s open on all-sides, Coppa Club has a raised lounge for working and winding down, a 250-cover restaurant with a marble herringbone floor, and a café with booths and a fireplace. Outside, there’s a large, south-facing terrace that catches the sun all day. All our seating is designed to make the most of our view over the river.</p>
 
-        <p>Our menu focuses on thoughtful, unfussy, European food from small plates and snacks to grilled mains, sourdough pizzas and healthy salads. There's a wide selection of breakfast and brunch dishes and the bar serves carefully-chosen wines, beers and classic cocktails as well as new creations.</p>
+          <p>Our menu focuses on thoughtful, unfussy, European food from small plates and snacks to grilled mains, sourdough pizzas and healthy salads. There's a wide selection of breakfast and brunch dishes and the bar serves carefully-chosen wines, beers and classic cocktails as well as new creations.</p>
 
-        <p>Drop in for breakfast and stay for dinner. No-one outstays their welcome.</p>
+          <p>Drop in for breakfast and stay for dinner. No-one outstays their welcome.</p>
 
-        <p><strong>Coppa Club, 3 Three Quays Walk, <br>Lower Thames Street, London, EC3R 6AH</strong></p>
+          <p><strong>Coppa Club, 3 Three Quays Walk, <br>Lower Thames Street, London, EC3R 6AH</strong></p>
 
-        <p><strong>020 7993 3827</strong></p>
+          <p><strong>020 7993 3827</strong></p>
 
-      </article>
+        </article>
 
-    </about>
+      </section>
+      
+      <!-- gallery -->
+
+      <section id="gallery">
+        <img src="images/gallery-image-1.jpg" alt="restaurant at tower bridge image">
+      </section>
+
+      <!-- menus -->
+
+      <section id="menus">
+
+        <article>
+
+          <h2>MENUS</h2>
+
+          <p>We start early, with a breakfast menu including juices, pastries, pancakes, all kinds of eggs and freshly-roasted coffee. At 11.30am, we switch to our all-day menu.</p>
+
+          <p>On weekends we serve brunch until 4pm.</p>
+
+        </article>
+
+        <ul id="category-btn">
+          <li><button>Breakfast</button></li>
+          <li><button>Brunch</button></li>
+          <li><button>All Day</button></li>
+          <li><button>Weekend</button></li>
+          <li><button>Pudding</button></li>
+          <li><button>Kids</button></li>
+          <li><button>Bar</button></li>
+        </ul>
+
+      </section>
     
-    <!-- gallery -->
 
-    <gallery>
-      <img src="images/gallery-image-1.jpg" alt="restaurant at tower bridge image">
-    </gallery>
+      <!-- newsletter -->
 
-    <!-- menus -->
-
-    <menus>
-
-      <article>
-
-        <h2>MENUS</h2>
-
-        <p>We start early, with a breakfast menu including juices, pastries, pancakes, all kinds of eggs and freshly-roasted coffee. At 11.30am, we switch to our all-day menu.</p>
-
-        <p>On weekends we serve brunch until 4pm.</p>
-
-      </article>
-
-      <ul id="category-btn">
-        <li><button>Breakfast</button></li>
-        <li><button>Brunch</button></li>
-        <li><button>All Day</button></li>
-        <li><button>Weekend</button></li>
-        <li><button>Pudding</button></li>
-        <li><button>Kids</button></li>
-        <li><button>Bar</button></li>
-      </ul>
-
-    </menus>
-  
-
-    <!-- newsletter -->
-
-    <newsletter>
-
-      <form>
-
-        <h2>SIGN UP</h2>
-
-        <p>If you would like regular updates on Coppa Club events and launches, sign up to our newsletter.</p>
-
-        <div>
-          <input type="email" placeholder="Email">
-          <button>Send</button>
-        </div>
-
-      </form>
-
-    </newsletter>
-
-    <!-- booking -->
-
-    <booking>
-
-      <section>
-
-        <h2>BOOK NOW</h2>
+      <section id="newsletter">
 
         <form>
 
-          <ul>
-          
-            <li>
-              <label>Booking Type</label>
-              <br>
-              <select><option>#</option></select>
-            </li>
+          <h2>SIGN UP</h2>
 
-            <li>
-              <label>Number of people</label>
-              <br>
-              <select><option>#</option></select>
-            </li>
+          <p>If you would like regular updates on Coppa Club events and launches, sign up to our newsletter.</p>
 
-            <li>
-              <label>Date</label>
-              <br>
-              <input type="date" required>
-            </li>
-
-            <li>
-              <label>Time</label>
-              <br>
-              <input type="time" min="9.00" max="22.00" required>
-            </li>
-
-            <li>
-              <label>Until</label>
-              <br>
-              <input type="time" min="9.30" max="22.30" required>
-            </li>
-
-          </ul>
-
-          <input type="submit" value="Book now">
+          <div>
+            <input type="email" placeholder="Email">
+            <button>Send</button>
+          </div>
 
         </form>
 
-        <p>We’ve installed eight giant igloos on our terrace to make the most of our view over the river. The igloos are available to book throughout the day from breakfast through to dinner for up to a maximum of 8 people, all bookings under 6 people will be sharing with other guests. Bookings can be made online only and are available until 31st March. We still leave some igloos for walk-ins in case your requested day and time is already taken, so feel free to drop in and have a drink at the bar as you wait.</p>
-
-      </section>
-      
-    </booking>
-
-    <!-- location -->
-
-    <location>
-
-      <img src="images/map.png" alt="map image">
-
-      <section id="location-information">
-
-        <h2>LOCATION</h2>
-
-        <h6><a href="#">DIRECTIONS</a></h6>
-
-        <p>Coppa Club, 3 Three Quays Walk, <br>Lower Thames Street, London, EC3R 6AH</p>
-
-        <ul id="openeing-time">
-          <li>Monday to Thursday 7.30am – 11pm</li>
-          <li>Friday 7.30am – 12am</li>
-          <li>Saturday 9am – 12am</li>
-          <li>Sunday 9am – 10.30pm</li>
-        </ul>
-
-        <p>Food served <br>Monday to Saturday until 11pm <br>Sunday until 10pm</p>
-
-        <p><a href="#">020 7993 3827</a><br><a href="#">towerbridge@coppaclub.co.uk</a></p>
-
       </section>
 
-    </location>
+      <!-- booking -->
 
-    <!-- join -->
+      <section id="booking">
 
-    <join>
+        <section>
 
-      <article>
-        <h2>JOIN US</h2>
-        <p>Like what we do? Come and work for us…<br>We're looking for bright, motivated people to join our team.</p>
-        <p>recruitment@coppaclub.co.uk</p>
+          <h2>BOOK NOW</h2>
 
-        <div id="restaurant-images">
-          <img src="images/barman.jpg" alt="Bar-Man Photo">
-          <img src="images/cocktail.jpg" alt="cocktail">
-          <img src="images/chef.jpg" alt="chef image">
+          <form>
+
+            <ul>
+            
+              <li>
+                <label>Booking Type</label>
+                <br>
+                <select><option>#</option></select>
+              </li>
+
+              <li>
+                <label>Number of people</label>
+                <br>
+                <select><option>#</option></select>
+              </li>
+
+              <li>
+                <label>Date</label>
+                <br>
+                <input type="date" required>
+              </li>
+
+              <li>
+                <label>Time</label>
+                <br>
+                <input type="time" min="09:00" max="22:00" required>
+              </li>
+
+              <li>
+                <label>Until</label>
+                <br>
+                <input type="time" min="09:30" max="22:30" required>
+              </li>
+
+            </ul>
+
+            <input type="submit" value="Book now">
+
+          </form>
+
+          <p>We’ve installed eight giant igloos on our terrace to make the most of our view over the river. The igloos are available to book throughout the day from breakfast through to dinner for up to a maximum of 8 people, all bookings under 6 people will be sharing with other guests. Bookings can be made online only and are available until 31st March. We still leave some igloos for walk-ins in case your requested day and time is already taken, so feel free to drop in and have a drink at the bar as you wait.</p>
+
+        </section>
+        
+      </section>
+
+      <!-- location -->
+
+      <section id="location">
+
+        <img src="images/map.png" alt="map image">
+
+        <section id="location-information">
+
+          <h2>LOCATION</h2>
+
+          <h6><a href="#">DIRECTIONS</a></h6>
+
+          <p>Coppa Club, 3 Three Quays Walk, <br>Lower Thames Street, London, EC3R 6AH</p>
+
+          <ul id="openeing-time">
+            <li>Monday to Thursday 7.30am – 11pm</li>
+            <li>Friday 7.30am – 12am</li>
+            <li>Saturday 9am – 12am</li>
+            <li>Sunday 9am – 10.30pm</li>
+          </ul>
+
+          <p>Food served <br>Monday to Saturday until 11pm <br>Sunday until 10pm</p>
+
+          <p><a href="#">020 7993 3827</a><br><a href="#">towerbridge@coppaclub.co.uk</a></p>
+
+        </section>
+
+      </section>
+
+      <!-- join -->
+
+      <section id="join">
+
+        <article>
+          <h2>JOIN US</h2>
+          <p>Like what we do? Come and work for us…<br>We're looking for bright, motivated people to join our team.</p>
+          <p>recruitment@coppaclub.co.uk</p>
+
+          <div id="restaurant-images">
+            <img src="images/barman.jpg" alt="Bar-Man Photo">
+            <img src="images/cocktail.jpg" alt="cocktail">
+            <img src="images/chef.jpg" alt="chef image">
+          </div>
+        </article>
+
+      </section>
+
+
+      <!-- social -->
+
+      <section id="social">
+
+        <p>Follow us on...</p>
+        
+        <div id="social-media-logo">
+          <a href="#"><img src="images/instagram.png" alt="instagram-logo"></a>
+          <a href="#"><img src="images/twitter.png" alt="twitter-logo"></a>
+          <a href="#"><img src="images/facebook.png" alt="facebook-logo"></a>
         </div>
-      </article>
 
-    </join>
-
-
-    <!-- social -->
-
-    <social>
-
-      <p>Follow us on...</p>
-      
-      <div id="social-media-logo">
-        <a href="#"><img src="images/instagram.png" alt="instagram-logo"></a>
-        <a href="#"><img src="images/twitter.png" alt="twitter-logo"></a>
-        <a href="#"><img src="images/facebook.png" alt="facebook-logo"></a>
-      </div>
-
-    </social>
+      </section>
+    </main>
 
     <!-- footer -->
     <footer>
 
-      <nav id="footer">
+      <nav id="footer-navigation">
         <ul>
           <li>020 7993 3827 <br>towerbridge@coppaclub.co.uk</li>
           <li>Coppa Club, 3 Three Quays Walk, <br>Lower Thames Street, London, EC3R 6AH</li>
