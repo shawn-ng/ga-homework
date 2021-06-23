@@ -1,0 +1,141 @@
+*{
+    background-color: antiquewhite;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: lightcoral; 
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    background-color: lightcoral;
+    padding-top: 2%;
+}
+
+header p{
+    display: flex;
+    justify-content: center;
+    background-color: lightcoral;
+    padding-bottom: 2%;
+}
+
+#Fav-Films {
+    padding-top: 30px;
+}
+
+#Fav-Films h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+#movie-container{
+    display: flex;
+    list-style-type: none;
+    max-width: 100%; /* This make sure the width dont grow out of the movie list container */
+    padding: 0px;
+    margin:0;
+    justify-content: center;
+}
+
+.movie{
+    display:flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.movie h3{
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 5px;
+}
+
+picture img{
+    max-width:100%;  /*This make sure the width doesnt go out of the container and the picture will follow the size of the container*/
+    height: auto;
+}
+
+#Fav-Music h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+#music-container{
+    display:flex;
+    justify-content: center;
+    list-style: none;
+    max-width:100%;
+    flex-wrap:wrap;
+}
+
+ul#music-container li{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    padding:5px;
+}
+
+
+section#Tech-section h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+ul#Tech-List li{
+    display: flex;
+    list-style-type: none;
+    margin-left: 5%;
+    background-color: lightblue;
+    padding: 1%;
+    border-radius: 5px;
+    margin:0;
+}
+
+ul#Tech-List{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    padding:3%;
+    border: 3px dashed black;
+    margin: 0.5%;
+}
+
+#Cities-Section h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+#Cities-Section ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding:0;
+}
+
+#Cities-Section ul > li{
+    width: 33%;
+    background-color: lightblue;
+}
+
+
+#Cities-Section ul>li h3{
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+#Cities-Section ul>li p{
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+}
