@@ -1,4 +1,42 @@
 * {
-   
+    color: #338b99;
+    box-sizing: border-box
 }
 
+ul > li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#hero-img{
+    height:70%;
+    width: 100%;
+}
+
+#logo-small-img{
+    height: 80px;
+    width: 7%;
+}
+
+#location-option{
+    background-color: rgba(0, 0, 0, 0);
+    width: 11.5%;
+    height: 60px;
+    justify-content: center;
+    border-color:white;
+    border-width: 5px;
+    color: black;
+}
+
+ul#header-ul li{
+    display:inline;
+}
+
+.header-list{
+    margin-left: 20px;
+    color: black;
+
+}
