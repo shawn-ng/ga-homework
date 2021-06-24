@@ -1,0 +1,265 @@
+/*
+google font: Nunito
+
+brand red: #ff5358
+dark red: #e00007
+background grey: #efefef
+title grey: #edefed
+footer grey: #2B2D2E
+*/
+*{
+    font-family: Nunito;
+}
+
+main{
+    background-color: antiquewhite;
+    margin-bottom: 70px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+}
+
+ul > li{
+    padding-left: 20px;
+}
+
+ul > li a{
+    text-decoration: none;
+    color: black;
+}
+
+.intro{
+    width: 100%;
+    background-image: url("../images/melbourne.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:    230px;
+    padding-bottom: 230px;
+}
+
+.intro h1{
+    font-weight: bolder;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.intro p{
+    font-size: 20px;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.intro button{
+    border: none;
+    border-radius: 5px;
+    width: 15%;
+    padding:10px;
+    background-color: #ff5358;
+    color: white;
+    font-weight: bold;
+}
+
+.comments {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    background-color: antiquewhite;
+}
+
+article{
+    width: 48%;
+}
+
+.good-comment div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.good-comment h3{
+    background-color:#edefed ;
+    margin:0;
+    padding: 7px;
+}
+
+.good-comment > div p{
+    background-color: white;
+}
+
+.bad-comment div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.bad-comment h3{
+    background-color: #edefed;
+    margin:0;
+    padding: 7px;
+}
+
+.bad-comment > div p{
+    background-color: white;
+}
+.featured{
+    background-color: white;
+}
+
+.featured-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.featured-intro h2{
+    font-size: 32px;
+    font-weight: bolder;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.featured-intro p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.featured-images{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.featured-images div{
+    width: 400px;
+}
+
+.Fitzroy{
+    background-image: url("../images/fitzroy.jpg");
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    color:white;
+}
+
+.Fitzroy h2{
+    font-weight: bold;
+}
+
+.Fitzroy p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.Fitzroy-p p{
+    font-size:12px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 20px 60px 60px 15px;
+    background-color: #edefed;
+}
+
+.St-Kilda{
+    background-image: url("../images/st-kilda.jpg");
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    color:white;
+}
+
+.St-Kilda h2{
+    font-weight: bold;
+}
+
+.St-Kilda p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.St-Kilda-p p{
+    font-size:12px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 20px 60px 60px 15px;
+    background-color: #edefed;
+}
+
+.CBD{
+    background-image: url("../images/central-business-district.jpg");
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    color:white;
+}
+
+.CBD h2{
+    font-weight: bold;
+}
+
+.CBD p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.CBD-p p{
+    font-size:12px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 20px 60px 44px 15px;
+    background-color: #edefed;
+}
+
+.featured-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-button button{
+    border: none;
+    border-radius: 5px;
+    width: 15%;
+    padding:10px;
+    background-color: #ff5358;
+    color: white;
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+    justify-content:center ;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #2B2D2E;
+}
+
+footer p{
+    width:90%;
+    color:white;
+    border-top: 1px solid white;
+    text-align: center;
+    padding-top: 50px;
+}
