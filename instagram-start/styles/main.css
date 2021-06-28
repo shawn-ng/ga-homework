@@ -5,8 +5,9 @@ body {
 body main {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 body main .phone-image {
   margin: 0 50px;
@@ -93,7 +94,7 @@ body main .log-in-details .get-app .app-images {
 body footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   align-content: center;
 }
@@ -102,6 +103,7 @@ body footer nav ul {
   list-style-type: none;
   margin-top: 70px;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 0;
 }
 body footer nav ul li {
