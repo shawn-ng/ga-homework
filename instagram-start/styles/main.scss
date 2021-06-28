@@ -5,7 +5,7 @@ body{
     main{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         
         .phone-image{
@@ -150,6 +150,7 @@ body{
             p{
                 text-align: center;
                 color: #999;
+                font-size: 14px;
             }
         }
     }
@@ -157,3 +158,15 @@ body{
 }
 
 /* During the lesson of this part my internet have problems so i do no sure whether this is the way to use sass */
+
+/* Phone view */
+
+@media (max-width: 870px){
+    body{
+        main{
+            .phone-image{
+                display: none;
+            }
+        }
+    }
+}
