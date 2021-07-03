@@ -78,7 +78,7 @@ function calculate(e){
     try {
         display.innerHTML = eval(final_value.join(""));
     } catch (error) {
-        alert("Syntax ERROR");
+        display.innerHTML = "Syntax ERROR"
     }
 
     display_value = [];
