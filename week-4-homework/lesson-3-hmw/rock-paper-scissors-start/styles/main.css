@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+body div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  background-color: antiquewhite;
+  margin-top: 8%;
+}
+body div .scoreContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body div .playerChoice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+body div .result {
+  background-color: red;
+  width: 80%;
+  border-radius: 5px;
+}
+body div .result p {
+  color: white;
+}
+body div .playerButt {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 80%;
+}
+body div .playerButt button {
+  width: 25%;
+  height: 50px;
+  margin-top: 30px;
+  border: none;
+  background-color: #fafafa;
+}
+body div .playerButt button:hover {
+  transform: scale(1.2);
+}
+body div .resetContainer {
+  width: 80%;
+}
+body div .resetContainer .reset {
+  width: 25%;
+  height: 35px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #fafafa;
+}
+body div .resetContainer .reset:hover {
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=main.css.map */
