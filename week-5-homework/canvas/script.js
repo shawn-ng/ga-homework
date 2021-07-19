@@ -2,9 +2,9 @@ const canvas = document.querySelector("canvas")
 const context = canvas.getContext('2d')
 
 // how many pixel it will move by 
-
-let speedx = 2 
-let speedy = 2 
+const initialDirection = [1,-1]
+let speedx = 2 * initialDirection[Math.floor(Math.random() * initialDirection.length)]
+let speedy = 2 * initialDirection[Math.floor(Math.random() * initialDirection.length)]
 
 // drawing paddle 
 context.fillStyle = "white"
@@ -13,7 +13,7 @@ function drawPaddles({X1,X2}){
     context.fillRect(X1, 20, 100, 10) // player 1
     context.fillRect(X2, 570 , 100, 10) // player 2
 }
-let playerPaddleX = {X1:20,X2:20}
+let playerPaddleX = {X1:250,X2:250}
 // drawing Ball
 function drawBall({position:{x,y},size}){
     context.beginPath()
@@ -34,7 +34,7 @@ const ball = {
 
 // setting initial position 
 function initialPosition(){
-    ball.position = {x:10 , y:canvas.height/17}
+    ball.position = {x:300 , y:300}
 }
 
 // function to handle movement 
@@ -64,7 +64,9 @@ function collision(){
         speedy = -speedy
    
     }
-
+    if(ball.position.y + speedy > 590 || ball.position.y + speedy < 20){
+        alert("you LOSE")
+    }
 }
 
 
@@ -134,10 +136,10 @@ const executeMoves = () => {
 function test(){
     context.clearRect(0,0,600,600)
     executeMoves()
+    newPositionofBall()
     drawBall(ball)
     drawPaddles(playerPaddleX)
     collision()
-    newPositionofBall()
     setTimeout(test, 15)
 }
 
