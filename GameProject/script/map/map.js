@@ -12,6 +12,7 @@ function drawMap(mapArray){
     let wall8 = new Image()
     let wall9 = new Image() // shadow
     let machine11 = new Image()
+    let machine12Back = new Image()
     
     wall1.src = "image/scifitiles-sheet copy/Layer 1_sprite_07.png"
     wall2.src = "image/scifitiles-sheet copy/Layer 1_sprite_06.png"
@@ -24,7 +25,8 @@ function drawMap(mapArray){
     wall9.src = "image/scifitiles-sheet copy/Layer 1_sprite_17.png"
     floor.src = "image/scifitiles-sheet copy/Layer 1_sprite_21.png"
     machine11.src = "image/scifitiles-sheet copy/Layer 1_sprite_45.png"
-    
+    machine12Back.src = "image/scifitiles-sheet copy/Layer 1_sprite_31.png"
+
     const tileW = 40
     const tileH = 40
     
@@ -74,6 +76,9 @@ function drawMap(mapArray){
             }
             if (mapArray[i][j] == 11){
                 ctx.drawImage(machine11, postX, postY, tileW, tileH)
+            }
+            if (mapArray[i][j] == 12){
+                ctx.drawImage(machine12Back, postX, postY, tileW, tileH)
             }
             postX += tileW
             
