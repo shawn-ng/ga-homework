@@ -1,0 +1,20 @@
+.profile-header {
+  border-bottom: 1px solid rgb(172, 172, 172);
+}
+
+.author {
+  font-weight: 800;
+}
+
+.text {
+  font-size: 1.25em;
+}
+
+.username,
+.displayName {
+  display: block;
+}
+
+.displayName {
+  font-weight: 400;
+}

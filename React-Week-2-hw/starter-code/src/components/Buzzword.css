@@ -1,0 +1,11 @@
+.buzzword {
+  border-bottom: 1px solid rgb(172, 172, 172);
+}
+
+.tag {
+  font-weight: 800;
+}
+
+.description {
+  font-size: 1.25em;
+}

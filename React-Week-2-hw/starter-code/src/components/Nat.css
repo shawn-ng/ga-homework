@@ -1,0 +1,17 @@
+.nat {
+  border-bottom: 1px solid rgb(172, 172, 172);
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.author {
+  font-weight: 800;
+}
+
+.author:hover {
+  color: rgb(182, 61, 40);
+}
+
+.text {
+  font-size: 1.25em;
+}
