@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bulba": "^0.9.0",
+    "bulma": "^0.9.3",
+    "react-router-dom": "^5.2.0"
+  }
+}

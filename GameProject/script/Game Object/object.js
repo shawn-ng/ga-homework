@@ -64,6 +64,7 @@ class Character{
             gameObject.position.y = this.position.y + scaleHeight/2 + 32/4
         }
     }
+
 }
 
 class Map{
