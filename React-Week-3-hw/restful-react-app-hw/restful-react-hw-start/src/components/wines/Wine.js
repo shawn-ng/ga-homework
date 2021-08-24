@@ -1,9 +1,10 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useHistory } from 'react-router-dom'
 
-import { SingleWineApi } from '../lib/api'
+import { deleteWine, SingleWineApi } from '../lib/api'
 
 const Wine = () => {
+  const history = useHistory()
   const [state, setState] = React.useState({
     wine: []
   })
@@ -21,7 +22,7 @@ const Wine = () => {
   React.useEffect(() => {
     fetchingSingleWineApi()
   }, [])
-  console.log(state)
+
   return (
     <section className="section">
       <div className="container">
@@ -49,6 +50,24 @@ const Wine = () => {
             <hr />
             <h4 className="title is-4">Price</h4>
             <p>{state.wine.price}</p>
+            <hr />
+            <button
+              className="button is-warning"
+              onClick={() => {
+                history.push(`/wines/${id}/edit`)
+              }}
+            >
+              Edit
+            </button>
+            <button
+              className="button is-danger ml-4"
+              onClick={async () => {
+                await deleteWine(id)
+                history.push('/wines')
+              }}
+            >
+              Delete
+            </button>
           </div>
         </div>
       </div>

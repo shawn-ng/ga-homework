@@ -20,7 +20,7 @@ const Login = () => {
     try {
       const res = await LoginUser(state.formData)
       if (res.status === 200) {
-        setToken(res.token)
+        setToken(res.data.token)
         history.push('/wines')
       }
     } catch (err) {

@@ -17,9 +17,6 @@ const NavBar = () => {
         <Link to="/login" className="navbar-item">
           Login
         </Link>
-        <Link to="/newWine" className="navbar-item">
-          Add Wine
-        </Link>
       </div>
     </nav>
   )

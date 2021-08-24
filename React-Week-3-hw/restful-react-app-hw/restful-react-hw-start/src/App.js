@@ -3,11 +3,12 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import NavBar from './components/NavBar'
 import Home from './components/Home'
-import WineBoard from './wines/WineBoard'
-import Wine from './wines/Wine'
-import Register from './auth/Register'
-import Login from './auth/Login'
-import NewWine from './wines/NewWine'
+import WineBoard from './components/wines/WineBoard'
+import Wine from './components/wines/Wine'
+import Register from './components/auth/Register'
+import Login from './components/auth/Login'
+import NewWine from './components/wines/NewWine'
+import EditWine from './components/wines/EditWine'
 
 const App = () => {
   return (
@@ -16,6 +17,12 @@ const App = () => {
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route path="/wines/add">
+          <NewWine />
+        </Route>
+        <Route path="/wines/:id/edit">
+          <EditWine />
         </Route>
         <Route path="/wines/:id">
           <Wine />
@@ -28,9 +35,6 @@ const App = () => {
         </Route>
         <Route path="/login">
           <Login />
-        </Route>
-        <Route path="/newWine">
-          <NewWine />
         </Route>
       </Switch>
     </Router>

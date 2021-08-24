@@ -1,9 +1,11 @@
 import React from 'react'
+import { useHistory } from 'react-router'
 
 import WineCard from './WineCard'
 import { WinesApi } from '../lib/api'
 
 const WineBoard = () => {
+  const history = useHistory()
   const [state, setState] = React.useState({
     wines: []
   })
@@ -26,6 +28,14 @@ const WineBoard = () => {
   return (
     <section className="section">
       <div className="container">
+        <button
+          className="button is-link mb-4"
+          onClick={() => {
+            history.push('/wines/add')
+          }}
+        >
+          Add New Wine
+        </button>
         <div className="columns is-multiline">
           {state.wines.map((wine) => {
             return <WineCard key={wine._id} {...wine} />
