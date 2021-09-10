@@ -4,13 +4,15 @@
   "description": "",
   "main": "app.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^6.0.5",
+    "mongoose-unique-validator": "^2.0.3"
+  },
+  "scripts": {
+    "start:server": "npx nodemon app.js",
+    "seed": "node db/seed.js"
   }
 }

@@ -1,4 +1,12 @@
 import { movies } from "../lib/list_of_movies.js";
+import Movie from "../models/movie.js";
+
+// getAllMovie
+export const getAllMovie = async (req, res, next) => {
+  const movies = await Movie.find();
+  res.status(200).json(movies);
+  next();
+};
 
 // getting specific movie and all movie
 export const getMovie = (req, res) => {
