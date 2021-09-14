@@ -21,7 +21,7 @@ const commentsSchema = new mongoose.Schema(
 );
 
 const movieSchema = new mongoose.Schema({
-  title: String,
+  title: { type: String, required: true },
   description: String,
   release: Number,
   comments: [commentsSchema],

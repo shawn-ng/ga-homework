@@ -22,3 +22,5 @@ async function seed() {
 }
 
 seed();
+
+// This is only creating database and you only have to run it when you change the schema structutre as if you run the new data will be deleted

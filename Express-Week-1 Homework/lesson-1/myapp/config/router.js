@@ -1,10 +1,11 @@
 import express from "express";
+import { createComment } from "../controllers/comments.js";
 import {
   getMovie,
-  addingMovie,
-  deleteMovie,
-  editMovie,
   getAllMovie,
+  createMovie,
+  deleteMovie,
+  updateMovie,
 } from "../controllers/movies.js";
 
 const router = express.Router();
@@ -12,16 +13,11 @@ const router = express.Router();
 // get all data
 router.route("/movies").get(getAllMovie);
 
-// getting the name of the movie
-router.route("/movie/:movieName").get(getMovie);
+// create movie
+router.route("/movies").post(createMovie);
 
-// adding movie to the list
-router.route("/movie").post(addingMovie);
+// get specific movie
+router.route("/movies/:id").get(getMovie).delete(deleteMovie).put(updateMovie);
 
-// delete movie
-router.route("/movie/:movieName?/:movieid?").delete(deleteMovie);
-
-// edit movie
-router.route("/movie/:movieName?/:movieid?").put(editMovie);
-
+router.route("/movies/:id/comments").post(createComment);
 export default router;
