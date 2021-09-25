@@ -14,6 +14,11 @@ const commentsSchema = new mongoose.Schema(
       min: 1,
       max: 5,
     },
+    createdBy: {
+      type: mongoose.Schema.ObjectId,
+      ref: "User",
+      required: true,
+    },
   },
   {
     timestamps: true, // each comment set into database will have a time stamp on them
@@ -25,6 +30,12 @@ const movieSchema = new mongoose.Schema({
   description: String,
   release: Number,
   comments: [commentsSchema],
+  createdBy: {
+    type: mongoose.Schema.ObjectId,
+    ref: "User",
+    required: true,
+  },
+  actors: [{ type: mongoose.Types.ObjectId, ref: "Actor" }],
 });
 
 movieSchema.plugin(mongooseUniqueValidator);
