@@ -11,6 +11,7 @@ import {
   createMovie,
   deleteMovie,
   updateMovie,
+  searchMovies,
 } from "../controllers/movies.js";
 import userController from "../controllers/userController.js";
 import secureRoute from "../middleware/secureRoute.js";
@@ -24,9 +25,15 @@ router.route("/movies").get(getAllMovie);
 router.route("/movies").post(secureRoute, createMovie);
 
 // get specific movie
-router.route("/movies/:id").get(getMovie).delete(deleteMovie).put(updateMovie);
+router
+  .route("/movies/:id")
+  .get(getMovie)
+  .delete(secureRoute, deleteMovie)
+  .put(secureRoute, updateMovie);
 
 router.route("/movies/:id/comments").post(secureRoute, createComment);
+
+router.route("/search").get(searchMovies);
 
 router
   .route("/movies/:id/comments/:commentId")

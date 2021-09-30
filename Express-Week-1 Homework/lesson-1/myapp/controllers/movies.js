@@ -1,6 +1,7 @@
 import Movie from "../models/movie.js";
 import Actor from "../models/actor.js";
 import removeAdded from "./helpers.js";
+
 // getAllMovie
 export const getAllMovie = async (req, res, next) => {
   const movies = await Movie.find();
@@ -107,6 +108,24 @@ export const updateMovie = async (req, res, next) => {
     );
 
     return res.status(200).json(movie);
+  } catch (err) {
+    next(err);
+  }
+};
+
+export const searchMovies = async (req, res, next) => {
+  try {
+    const { q } = req.query;
+
+    const regex = new RegExp(q, "i");
+
+    const query = Movie.find();
+    query.where({
+      $or: [{ title: regex }],
+    });
+
+    const movies = await query;
+    return res.status(200).json(movies);
   } catch (err) {
     next(err);
   }

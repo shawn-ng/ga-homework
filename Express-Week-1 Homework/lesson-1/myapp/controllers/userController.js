@@ -1,6 +1,5 @@
 import User from "../models/user.js";
 import jwt from "jsonwebtoken";
-import { secret } from "../config/environment.js";
 
 const registerUser = async (req, res, next) => {
   try {
@@ -25,7 +24,7 @@ const loginUser = async (req, res, next) => {
 
     const token = jwt.sign(
       { userId: user._id }, // information we want to store in the token
-      secret,
+      process.env.SECRET,
       { expiresIn: "12h" }
     );
 

@@ -1,6 +1,5 @@
 import jwt from "jsonwebtoken";
 import User from "../models/user.js";
-import { secret } from "../config/environment.js";
 
 // make sure user request have a valid token
 
@@ -20,7 +19,7 @@ const secureRoute = async (req, res, next) => {
     const token = authToken.replace("Bearer ", "");
 
     // try to extract the data on the token using the secret. also handle error
-    jwt.verify(token, secret, async (err, data) => {
+    jwt.verify(token, process.env.SECRET, async (err, data) => {
       if (err) {
         return res.status(401).send({ msg: "Unauthorized" });
       }
